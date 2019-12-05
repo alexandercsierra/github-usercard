@@ -92,7 +92,9 @@ function createCard(user){
   card.appendChild(cardInfo);
   // console.log(calendar);
 
-  const calendar = new GitHubCalendar(calDiv, user.login);
+  const calendar = new GitHubCalendar(calDiv, user.login, {
+    responsive: true
+});
   console.log(calendar);
   return card;
 }
